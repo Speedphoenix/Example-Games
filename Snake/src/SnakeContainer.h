@@ -25,6 +25,8 @@ class SnakeContainer : public GameContainer
 
 		virtual void onKeyboardEvent(const KeyboardEvent& event);
 
+		virtual void init();
+
 	public:
 		SnakeContainer(long _width, long _height);
 		virtual ~SnakeContainer();
@@ -32,8 +34,6 @@ class SnakeContainer : public GameContainer
 		//no copy ctor or assignment
 		SnakeContainer(const SnakeContainer&) = delete;
 		SnakeContainer& operator=(const SnakeContainer&) = delete;
-
-		virtual void start();
 
 		virtual double maximumX() { return mapWidth(); }
 		virtual double maximumY() { return mapHeight(); }

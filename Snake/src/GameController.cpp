@@ -123,6 +123,7 @@ E(m_body.front()->attachedObject()->transform().absY())
 
 void GameController::onKeyboardEvent(const KeyboardEvent& event)
 {
+	EINF
 	if (m_keyToEvent.count(event.keycode) == 0)
 		return;
 	unsigned choice = m_keyToEvent.at(event.keycode);
@@ -135,8 +136,10 @@ void GameController::onKeyboardEvent(const KeyboardEvent& event)
 	}
 	else
 	{
+		EINF
 		if (choice == Input::InputChoice::End)
 		{
+			EINF
 			GameContainer::instance()->setFinished(true);
 		}
 		//pause the game if choise == InputChoice::pause?

@@ -18,7 +18,7 @@ SnakeContainer::~SnakeContainer()
 
 }
 
-void SnakeContainer::start()
+void SnakeContainer::init()
 {
 	m_controller = new GameController(getGlobalObject());
 	getGlobalObject()->attachBehaviour(m_controller);

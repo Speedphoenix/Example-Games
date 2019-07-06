@@ -29,7 +29,9 @@ int main(int argc, char* argv[])
 
 	test::maketestSprites();
 
+	EINF
 	theGame->start();
+	EINF
 
 	double elapsed = 0.02;
 
