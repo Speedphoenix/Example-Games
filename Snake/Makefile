@@ -73,7 +73,7 @@ engine:
 debug: CXXFLAGS += $(DEBUGFLAGS)
 debug: $(NAME)
 
-extrawarnings: CXX += $(EXTRAWFLAGS)
+extrawarnings: CXXFLAGS += $(EXTRAWFLAGS)
 extrawarnings: debug
 
 release: CXXFLAGS += $(RELEASEFLAGS)

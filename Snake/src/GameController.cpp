@@ -87,8 +87,8 @@ void GameController::update()
 {
 	int lastx, lasty;
 	list<SnakeBody*>::iterator it;
-SEPP
 /*
+	SEPP
 E(m_currentElapsed)
 E(m_currentSnakeLapse)
 E(m_body.size())
@@ -119,11 +119,11 @@ E(m_body.front()->attachedObject()->transform().absY())
 			m_toAdd--;
 		}
 	}
+
 }
 
 void GameController::onKeyboardEvent(const KeyboardEvent& event)
 {
-	EINF
 	if (m_keyToEvent.count(event.keycode) == 0)
 		return;
 	unsigned choice = m_keyToEvent.at(event.keycode);
@@ -136,10 +136,8 @@ void GameController::onKeyboardEvent(const KeyboardEvent& event)
 	}
 	else
 	{
-		EINF
 		if (choice == Input::InputChoice::End)
 		{
-			EINF
 			GameContainer::instance()->setFinished(true);
 		}
 		//pause the game if choise == InputChoice::pause?
