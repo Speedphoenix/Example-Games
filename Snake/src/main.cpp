@@ -14,6 +14,8 @@ namespace test {
 
 int main(int argc, char* argv[])
 {
+	(void)argc;
+	(void)argv;
 	try
 	{
 		initAlleg(ALLEGRO_WINDOWED, defMapWidth * tileSide, defMapHeight * tileSide);
