@@ -38,3 +38,7 @@ obj/
 
 # vim swap files
 *.swp
+
+
+# Executable binaries
+Snake/Snake

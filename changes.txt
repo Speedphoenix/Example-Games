@@ -1,0 +1,4 @@
+- behaviours should use init() instead of start()
+- check that you only create/use Behaviours, not GameObjects
+- change the way events are used
+- use c++14 instead of c++11
